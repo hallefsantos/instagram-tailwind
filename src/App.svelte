@@ -5,6 +5,7 @@
    import ButtonDirect from './components/ButtonDirect.svelte'
    import ButtonProfile from './components/ButtonProfile.svelte'
    import Search from './components/Search.svelte'
+   import Footer from './components/Footer.svelte'
 
    const direct = 9
 
@@ -102,25 +103,6 @@
    <Post />
 </main>
 
-<div class="fixed bottom-0 inset-x-0 px-3 py-2 flex justify-between shadow-lg bg-white border-t border-gray-light">
-   <button>
-      <Icon class="w-7 h-7" name="house"/>
-   </button>
-
-   <button>
-      <Icon class="w-7 h-7" name="search"/>
-   </button>
-
-   <button>
-      <Icon class="w-7 h-7" name="plus"/>
-   </button>
-
-   <button>
-      <Icon class="w-7 h-7" name="heart"/>
-   </button>
-
-   <ButtonProfile />
-
-</div>
+<Footer />
 
 <!-- TODO: Criar um component para as rounded-full-images deixando passar classe por parametro, img, alt -->
