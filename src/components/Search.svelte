@@ -14,8 +14,6 @@
       searchInput.value = ''
       isFocused = false
    }
-
-   $: console.log(searchInput)
 </script>
 
 <div class="relative">
