@@ -83,7 +83,7 @@
    <Stories {stories} />
 </div>
 
-<main>
+<main class="pb-8">
    <!-- Post -->
    <Post />
    <Post />
@@ -93,23 +93,27 @@
 
 <div class="fixed bottom-0 inset-x-0 px-3 py-2 flex justify-between shadow-lg bg-white border-t border-gray-light">
    <button>
-      <Icon class="w-6 h-6" name="house"/>
+      <Icon class="w-7 h-7" name="house"/>
    </button>
 
    <button>
-      <Icon class="w-6 h-6" name="search"/>
+      <Icon class="w-7 h-7" name="search"/>
    </button>
 
    <button>
-      <Icon class="w-6 h-6" name="plus"/>
+      <Icon class="w-7 h-7" name="plus"/>
    </button>
 
    <button>
-      <Icon class="w-6 h-6" name="heart"/>
+      <Icon class="w-7 h-7" name="heart"/>
    </button>
 
    <button>
-      <img class="rounded-full" src="https://placekitten.com/18/18" alt="">
+      <img 
+         class="w-7 h-7 rounded-full object-cover object-center" 
+         src="https://placekitten.com/30/30" 
+         alt="@haalefs"
+      >
    </button>
 
 </div>
