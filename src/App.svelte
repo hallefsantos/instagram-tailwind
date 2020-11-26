@@ -2,6 +2,9 @@
    import Stories from './components/Stories.svelte'
    import Icon from './components/Icon.svelte'
    import Post from './components/Post.svelte'
+   import ButtonDirect from './components/ButtonDirect.svelte'
+   import ButtonProfile from './components/ButtonProfile.svelte'
+   import Search from './components/Search.svelte'
 
    const direct = 9
 
@@ -54,28 +57,36 @@
 </script>
 
 <header class="fixed inset-x-0 px-4 py-2 shadow bg-white z-10">
-   <div class="flex justify-between items-center">
-      <button>
-         <Icon class="h-6 w-6" name="camera" />
-      </button>
+   <div class="lg:m-auto lg:max-w-4xl flex justify-between items-center lg:grid lg:grid-cols-3">
+      <div class="block lg:hidden">
+         <button>
+            <Icon class="h-6 w-6" name="camera" />
+         </button>
+      </div>
 
-      <a href="#">
-         <img class="h-8" src="/src/images/logo.svg" alt="">
-      </a>
+      <div class="">
+         <a href="#">
+            <img class="h-8" src="/src/images/logo.svg" alt="">
+         </a>
+      </div>
 
-      <button class="relative">
-         <Icon 
-            class="h-6 w-6 transform rotate-45" 
-            name="direct" 
-         />
-         {#if direct > 0}
-            <span 
-               class="absolute right-0 top-0 h-4 w-4 flex items-center justify-center bg-red text-xs text-white rounded-full"
-            >
-               {direct}
-            </span>
-         {/if}
-      </button>
+      <div class="flex justify-center">
+         <Search />
+      </div>
+
+      <!-- Button Svelte -->
+      <div class="flex items-center justify-end space-x-4">
+         <button><Icon class="h-6 w-6" name="house" /></button>
+
+         <ButtonDirect {direct} />
+
+         <button><Icon class="h-6 w-6" name="map" /></button>
+
+         <button><Icon class="h-6 w-6" name="heart" /></button>
+
+         <ButtonProfile />
+      </div>
+      
    </div>
 </header>
 
@@ -108,13 +119,7 @@
       <Icon class="w-7 h-7" name="heart"/>
    </button>
 
-   <button>
-      <img 
-         class="w-7 h-7 rounded-full object-cover object-center" 
-         src="https://placekitten.com/30/30" 
-         alt="@haalefs"
-      >
-   </button>
+   <ButtonProfile />
 
 </div>
 
