@@ -70,21 +70,21 @@
          </a>
       </div>
 
-      <div class="flex justify-center">
+      <div class="hidden sm:flex justify-center">
          <Search />
       </div>
 
       <!-- Button Svelte -->
       <div class="flex items-center justify-end space-x-4">
-         <button><Icon class="h-6 w-6" name="house" /></button>
+         <button class="hidden sm:block"><Icon class="h-6 w-6" name="house" /></button>
 
          <ButtonDirect {direct} />
 
-         <button><Icon class="h-6 w-6" name="map" /></button>
+         <button class="hidden sm:block"><Icon class="h-6 w-6" name="map" /></button>
 
-         <button><Icon class="h-6 w-6" name="heart" /></button>
+         <button class="hidden sm:block"><Icon class="h-6 w-6" name="heart" /></button>
 
-         <ButtonProfile />
+         <ButtonProfile class="hidden sm:block" />
       </div>
       
    </div>
