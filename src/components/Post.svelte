@@ -8,7 +8,6 @@
 
    const randProfile = Math.floor(Math.random() * (40 - 30 + 1) + 30)
    const randPicture = Math.floor(Math.random() * (500 - 350 + 1) + 350)
-   console.log(randPicture)
 </script>
 
 <article class="mb-5">
