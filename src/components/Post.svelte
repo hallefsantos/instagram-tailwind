@@ -23,7 +23,7 @@
          </a>
 
          <button on:click={() => isMenuActive = !isMenuActive}>
-            <Icon class="h-6 w-6 opacity-80" name="dots"/>
+            <Icon class="h-4 w-4 opacity-80" name="dots"/>
          </button>
 
       </div>
